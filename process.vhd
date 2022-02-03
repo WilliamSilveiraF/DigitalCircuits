@@ -8,16 +8,16 @@ entity Sinais is port (
 end Sinais;
 
 architecture behv of Sinais is
- signal A, B: std_logic;
+  signal A, B: std_logic;
 begin
- A <= D;
- Q <= B;
+  A <= D;
+  Q <= B;
 
- P1: process(C, D) --sensitivity list
- begin
-  B <= '0';
-  if (C = '1') then
-    B <= D;
-  end if;
- end process P1;
+  P1: process(C, D) --sensitivity list
+  begin
+    B <= '0';
+    if (C = '1') then
+      B <= D;
+    end if;
+  end process P1;
 end behv;

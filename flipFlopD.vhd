@@ -2,9 +2,9 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity flipFlopD is port (
- CLK: in std_logic;
- D: in std_logic;
- Q: out std_logic);
+  CLK: in std_logic;
+  D: in std_logic;
+  Q: out std_logic);
 end flipFlopD;
 
 architecture behv of flipFlopD is

@@ -11,8 +11,8 @@ architecture behv of latchD is
 begin
   process(C, D)
   begin
-   if (C = '1') then
-       Q <= D;
-   end if;
+    if (C = '1') then
+      Q <= D;
+    end if;
   end process;
 end behv;
