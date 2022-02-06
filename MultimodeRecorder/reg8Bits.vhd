@@ -17,4 +17,5 @@ begin
                 RES <= REQ;
             end if;
         end if;
+    end process;
 end behavior;
