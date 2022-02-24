@@ -11,7 +11,7 @@ architecture behavior of fsm is
     type STATES is (Off, On1);
     signal EAtual, PEstado: STATES;
 begin
-    process(clock, reset)
+    REG: process(clock, reset)
     begin
         if (reset = "1") then
             EAtual <= Off;
